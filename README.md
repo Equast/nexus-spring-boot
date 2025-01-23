@@ -4,7 +4,7 @@
 
 ### Endpoints
 
-#### 1. GET /api/doctor-holidays
+#### 1. GET /doctor-holidays
 
 - **Description**: Retrieves the holidays for a specific doctor at a specific clinic.
 - **Query Parameters**:
@@ -12,7 +12,7 @@
   - `clinicId`: The ID of the clinic.
 - **Sample API Call**:
   ```
-  GET /api/doctor-holidays?doctorId=123&clinicId=456
+  GET /doctor-holidays?doctorId=123&clinicId=456
   ```
 - **Expected Results**:
   - **200 OK**:
@@ -39,7 +39,7 @@
     "No holidays found for this doctor and clinic."
     ```
 
-#### 2. PUT /api/doctor-holidays/add
+#### 2. PUT /doctor-holidays/add
 
 - **Description**: Adds a holiday for a specific doctor at a specific clinic.
 - **Request Body**: A `DoctorHoliday` object containing:
@@ -49,7 +49,7 @@
 - **Sample API Call**:
 
   ```
-  PUT /api/doctor-holidays/add
+  PUT /doctor-holidays/add
   Content-Type: application/json
 
   {

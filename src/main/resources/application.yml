@@ -10,5 +10,5 @@ spring:
     mongodb:
       uri: mongodb+srv://nexus:nexus@phr.on1mb.mongodb.net/NexusEnterprise
       auto-index-creation: true
-#server:
-  #address: 0.0.0.0
+server:
+  address: 0.0.0.0

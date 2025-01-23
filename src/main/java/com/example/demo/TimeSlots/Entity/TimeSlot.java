@@ -1,6 +1,11 @@
 package com.example.demo.TimeSlots.Entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+
 public class TimeSlot {
+    @Id
+    @Indexed(unique = true)
     private String _id;       // Unique identifier for the timeslot
     private String startTime; // Start time
     private String endTime;   // End time
